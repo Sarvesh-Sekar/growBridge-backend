@@ -1,0 +1,24 @@
+{
+  "name": "sampleREST",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "pg": "^8.14.1",
+    "sampleREST": "file:",
+    "typeorm": "^0.3.22"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "start": "tsc && node dist/index.js",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration": " npm run typeorm migration:run -- -d ./src/data-source.ts"
+  }
+}
